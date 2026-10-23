@@ -476,9 +476,20 @@ svg {
 /* About */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 2.5rem 4.5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   align-items: start;
+}
+.about-heading-image {
+  margin-top: 0;
+  align-self: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
 }
 
 .about-head .section-title {
@@ -676,7 +687,17 @@ svg {
   border: 1px solid rgba(255, 255, 255, 0.12);
   transition: background 0.3s, transform 0.3s, border-color 0.3s;
 }
-
+.about-heading-image {
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+  border: 3px solid #0f2a5f;
+  border-radius: 16px;
+  display: block;
+  margin-top: 0;
+}
 .contact-card:hover {
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.3);
